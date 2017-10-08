@@ -5,8 +5,11 @@
 - git push コマンドで、ローカルのコミットをリモートのリポジトリに反映させることができる
 
 ## pull手順
+
+```
 >git pull origin gh-pages
 >git remote  */リモートの情報を見る/*
+```
 
 ## push手順
 
@@ -27,6 +30,8 @@
 ```
 
 ## ブランチを作る
+
+```
 >git branch gh-pages  */branchのうしろにブランチ名/*
 >git branch
 >git checkout gh-pages
@@ -34,3 +39,4 @@
 gh-pagesブランチでコード変更
 >git checkout master    */取り込みたいブランチに切り替え/*
 >git merge gh-pages     */取り込むブランチからのマージ/*
+```
