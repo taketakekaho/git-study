@@ -4,7 +4,11 @@
 - git commit コマンドで、リポジトリのインデックスに追加された変更情報にコメントを付けてコミットできる
 - git push コマンドで、ローカルのコミットをリモートのリポジトリに反映させることができる
 
-##push手順
+## pull手順
+>git pull origin gh-pages
+>git remote  */リモートの情報を見る/*
+
+## push手順
 
 ```
 >git add *
@@ -15,10 +19,18 @@
 >git push -u origin master
 ```
 
-##タグ
+## タグ
 
 ```
 >git tag 1.0
 >git push -tags origin master
 ```
 
+## ブランチを作る
+>git branch gh-pages  */branchのうしろにブランチ名/*
+>git branch
+>git checkout gh-pages
+>git branch
+gh-pagesブランチでコード変更
+>git checkout master    */取り込みたいブランチに切り替え/*
+>git merge gh-pages     */取り込むブランチからのマージ/*
